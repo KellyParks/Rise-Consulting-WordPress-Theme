@@ -5,7 +5,13 @@ Description: WP theme for Rise Consulting
 Version: 2.0
 */
 
+
+
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100italic);
+
+$mainFont: 'Lato', sans-serif;
+$riseRed: #ce1f27;
+$whiteText: #ffffff;
 
 * {
   box-sizing: inherit;
@@ -20,7 +26,7 @@ html {
 
 body {
   position: relative;
-  font-family: 'Lato', sans-serif;
+  font-family: $mainFont;
   font-style: normal;
   font-size: 100%;
   line-height: 1em;
@@ -43,24 +49,24 @@ header {
     margin: 0 auto;
   }
   address {
-    color: white;
+    color: $whiteText;
     text-align: center;
     margin: 15% 0;
     font-style: normal;
   }
   div div {
     transform: skewX(-6deg);
-    background-color: #ce1f27;
+    background-color: $riseRed;
     border: 1px #4a4746 solid;
     text-align: center;
     width: 80%;
     margin: 0 auto;
     p {
       transform: skewX(6deg);
-      font-family: 'Lato', sans-serif;
+      font-family: $mainFont;
       font-size: 1.5em;
       font-weight: 100;
-      color: white;
+      color: $whiteText;
       display: inline-block;
       line-height: 1em;
       max-width: 85%;
@@ -103,7 +109,7 @@ header {
 }
 
 h1 {
-  color: #ce1f27;
+  color: $riseRed;
   text-transform: uppercase;
   font-size: 1.4375em;
   line-height: 1.2em;
@@ -112,7 +118,7 @@ h1 {
 }
 
 h2 {
-  color: #ce1f27;
+  color: $riseRed;
   text-transform: uppercase;
   font-size: 16px;
   margin: 0 0 6% 0;
@@ -166,14 +172,14 @@ h4 {
   }
   p {
     font-size: 14px;
-    color: white;
+    color: $whiteText;
     line-height: 1.5em;
     margin: 0 0 10% 0;
   }
   button {
     background-color: transparent;
     border: none;
-    color: white;
+    color: $whiteText;
     font-size: 14px;
     padding: 0;
     margin: 0 0 20% 0;
@@ -211,7 +217,7 @@ h4 {
   a {
     display: block;
     border-left: 5px #8f8f8f solid;
-    color: #fff;
+    color: $whiteText;
     text-align: right;
     width: 100%;
     padding: 22px 15% 0 0;
@@ -242,7 +248,7 @@ footer {
     color: #000;
     font-size: 1em;
     font-weight: 560;
-    font-family: 'Lato';
+    font-family: $mainFont;
     font-style: normal;
   }
   h3 {
@@ -325,10 +331,10 @@ textarea {
 }
 
 input[type=submit] {
-  background-color: #ce1f27;
+  background-color: $riseRed;
   border: none;
   font-size: 0.8125em;
-  color: white;
+  color: $whiteText;
   padding: 15px 0;
   margin-top: 5px;
 }
@@ -370,7 +376,7 @@ input[type=submit] {
     }
     address {
       float: right;
-      color: white;
+      color: $whiteText;
       text-align: right;
       margin: 0;
     }
